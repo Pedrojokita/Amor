@@ -1,0 +1,21 @@
+.site-footer {
+    background: #4e54c8;
+    color: white;
+    text-align: center;
+    padding: 15px 20px;
+    font-size: 0.9rem;
+}
+
+.site-footer p {
+    margin: 0;
+}
+
+.site-footer a {
+    color: #ffcccb;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}

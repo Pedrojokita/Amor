@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bem-vinda, Pequenina ❤️</title>
+    <link rel="stylesheet" href="css/index.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <div id="header"></div>
+
+    <!-- Introdução -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Este site foi feito para ti e so para ti pequenina ❤️</h1>
+            <p>Pequenina, já há imenso tempo que me tens pedido para te fazer um site e não consegui encontrar uma melhor oportunidade do que esta para o fazer. Eu quero que saibas que te adoro mesmo do fundo do coração e que só te quero ver feliz, para sempre. Espero que esta pequena parte da tua prenda te deixe feliz e vou estar sempre aui para ti❤️❤️❤️.</p>
+            <button onclick="scrollToOptions()">Descobre Mais</button>
+        </div>
+        <div class="hearts"></div>
+    </section>
+
+    <!-- Rodapé -->
+    <div id="footer"></div>
+
+    <script>
+        // Incluir cabeçalho e rodapé
+        fetch('header.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('header').innerHTML = data);
+
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => document.getElementById('footer').innerHTML = data);
+
+        // Scroll para as opções
+        function scrollToOptions() {
+            document.querySelector('.options-section').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
